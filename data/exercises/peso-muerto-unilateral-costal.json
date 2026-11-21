@@ -1,0 +1,22 @@
+{
+  "alternativas": [
+    "peso-muerto-mancuerna",
+    "peso-muerto-step",
+    "peso-muerto-unilateral-polea",
+    "peso-muerto-banda",
+    "buenos-dias-smith"
+  ],
+  "emoji": "🎒",
+  "fuenteImg": "free-exercise-db (dominio público) · referencia: versión con kettlebell",
+  "imagenes": [
+    "/_blob/04b7a9b0dbe0404902bf947e96c733c3",
+    "/_blob/30c47282e226a881d43da4d3bfec5a49"
+  ],
+  "musculos": [
+    "Isquiotibiales",
+    "Glúteos"
+  ],
+  "nombre": "Peso muerto unilateral con costal",
+  "nota": "",
+  "tipo": "fuerza"
+}

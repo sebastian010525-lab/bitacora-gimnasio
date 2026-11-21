@@ -1,0 +1,58 @@
+{
+  "Abdomen": {
+    "credito": "«Rectus abdominis.png», Wikimedia Commons, CC BY-SA 3.0",
+    "url": "/_blob/23c27741415d3803d4c19560a8285b36"
+  },
+  "Abductores": {
+    "credito": "«Gluteus medius.gif», BodyParts3D/Anatomography, CC BY-SA 2.1 JP",
+    "url": "/_blob/491241f5ee4c1f0f325aa5f270b43412"
+  },
+  "Aductores": {
+    "credito": "«Adductor longus.gif», BodyParts3D/Anatomography, CC BY-SA 2.1 JP",
+    "url": "/_blob/2a9d9a833ad01696b989573200a01b97"
+  },
+  "Antebrazo": {
+    "credito": "«Brachioradialis.png» (H. V. Carter, Gray's Anatomy), dominio público",
+    "url": "/_blob/4ea698f7adc9ac6f37619fb72df6db13"
+  },
+  "Bíceps": {
+    "credito": "«Biceps brachii.png» (Chrizz), Wikimedia Commons, CC BY-SA 3.0",
+    "url": "/_blob/1a0235b68b15d42a2ac28df48f21303e"
+  },
+  "Cuádriceps": {
+    "credito": "«Quadriceps 3D.gif», BodyParts3D/Anatomography, CC BY-SA 2.1 JP",
+    "url": "/_blob/e6497b4e85898735a6fc67442dd47908"
+  },
+  "Dorsal": {
+    "credito": "«Latissimus dorsi.png» (Nikai), Wikimedia Commons, CC BY-SA 3.0",
+    "url": "/_blob/21087fb04ac55fc43d52ac137e3f76c1"
+  },
+  "Espalda": {
+    "credito": "«Trapezius.png», Wikimedia Commons, CC BY-SA 3.0",
+    "url": "/_blob/0529afdb21614907395dc497fbc27ff0"
+  },
+  "Glúteos": {
+    "credito": "«Gluteus maximus.png», Wikimedia Commons, CC BY-SA 3.0",
+    "url": "/_blob/f39064f4f81f5fe85cab796c2913fdf4"
+  },
+  "Hombros": {
+    "credito": "«Deltoideus.png» (Chrizz), Wikimedia Commons, CC BY-SA 3.0",
+    "url": "/_blob/1a5ca66b50620da8f7704d9e25f86864"
+  },
+  "Isquiotibiales": {
+    "credito": "«Hamstrings.gif», BodyParts3D/Anatomography, CC BY-SA 2.1 JP",
+    "url": "/_blob/5f6d949a8df66c7393808f72d94b603f"
+  },
+  "Pantorrillas": {
+    "credito": "«Gastrocnemius.png», Wikimedia Commons, CC BY-SA 3.0",
+    "url": "/_blob/7925c24877f5e61d20df190f04ab3690"
+  },
+  "Pecho": {
+    "credito": "«Pectoralis major.png», Wikimedia Commons, CC BY-SA 3.0",
+    "url": "/_blob/bbb7a45397729db1956e8fea261ebedc"
+  },
+  "Tríceps": {
+    "credito": "«Triceps brachii.png», Wikimedia Commons, CC BY-SA 3.0",
+    "url": "/_blob/fdae11d65323748e966d17c2518d5af8"
+  }
+}

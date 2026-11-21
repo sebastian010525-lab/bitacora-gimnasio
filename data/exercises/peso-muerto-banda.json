@@ -1,0 +1,22 @@
+{
+  "alternativas": [
+    "peso-muerto-mancuerna",
+    "peso-muerto-step",
+    "peso-muerto-unilateral-costal",
+    "peso-muerto-unilateral-polea",
+    "buenos-dias-smith"
+  ],
+  "emoji": "🎗️",
+  "fuenteImg": "free-exercise-db (dominio público)",
+  "imagenes": [
+    "/_blob/0905f6f257c4b2f4ce2d0eeb1a0efe14",
+    "/_blob/092fd0e7c7a05d95db92492ccdc27543"
+  ],
+  "musculos": [
+    "Isquiotibiales",
+    "Glúteos"
+  ],
+  "nombre": "Peso muerto con banda elástica",
+  "nota": "",
+  "tipo": "fuerza"
+}

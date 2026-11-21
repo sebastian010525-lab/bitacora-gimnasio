@@ -1,0 +1,22 @@
+{
+  "alternativas": [
+    "peso-muerto-mancuerna",
+    "peso-muerto-step",
+    "peso-muerto-unilateral-costal",
+    "peso-muerto-banda",
+    "buenos-dias-smith"
+  ],
+  "emoji": "🏋️",
+  "fuenteImg": "free-exercise-db (dominio público) · referencia: pull through en polea",
+  "imagenes": [
+    "/_blob/f2e02f7be41ef8ef5e04c8ae7bce8c1c",
+    "/_blob/6ee9b869c851806a7cdb9e07f170b3ef"
+  ],
+  "musculos": [
+    "Isquiotibiales",
+    "Glúteos"
+  ],
+  "nombre": "Peso muerto unilateral en polea baja",
+  "nota": "",
+  "tipo": "fuerza"
+}

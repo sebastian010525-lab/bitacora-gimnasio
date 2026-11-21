@@ -1,0 +1,22 @@
+{
+  "alternativas": [
+    "peso-muerto-mancuerna",
+    "peso-muerto-step",
+    "peso-muerto-unilateral-costal",
+    "peso-muerto-unilateral-polea",
+    "peso-muerto-banda"
+  ],
+  "emoji": "🌅",
+  "fuenteImg": "free-exercise-db (dominio público) · referencia: buenos días con barra",
+  "imagenes": [
+    "/_blob/1097ee5d84b51ab8f317de5b106bae74",
+    "/_blob/4f7dafded32e0a40c2809bda008a81b1"
+  ],
+  "musculos": [
+    "Isquiotibiales",
+    "Lumbar"
+  ],
+  "nombre": "Buenos días en Smith",
+  "nota": "",
+  "tipo": "fuerza"
+}

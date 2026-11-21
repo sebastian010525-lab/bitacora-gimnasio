@@ -1,0 +1,22 @@
+{
+  "alternativas": [
+    "peso-muerto-mancuerna",
+    "peso-muerto-unilateral-costal",
+    "peso-muerto-unilateral-polea",
+    "peso-muerto-banda",
+    "buenos-dias-smith"
+  ],
+  "emoji": "🪜",
+  "fuenteImg": "free-exercise-db (dominio público) · referencia: peso muerto con déficit",
+  "imagenes": [
+    "/_blob/e646a5614c1d2a5cd560e0e702209498",
+    "/_blob/9fc40f5df16ee6ca09f374d131821fa5"
+  ],
+  "musculos": [
+    "Isquiotibiales",
+    "Glúteos"
+  ],
+  "nombre": "Peso muerto con mancuerna en step",
+  "nota": "",
+  "tipo": "fuerza"
+}
