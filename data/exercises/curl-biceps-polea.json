@@ -1,0 +1,18 @@
+{
+  "alternativas": [
+    "curl-biceps",
+    "curl-barra"
+  ],
+  "emoji": "💪",
+  "fuenteImg": "free-exercise-db (dominio público)",
+  "imagenes": [
+    "/_blob/6f4ce05bf00de183d68e2ad2cc66c1f5",
+    "/_blob/fc79b1218c0152917673ad425e644cde"
+  ],
+  "musculos": [
+    "Bíceps"
+  ],
+  "nombre": "Curl de bíceps en polea (cuerda o barra)",
+  "nota": "",
+  "tipo": "fuerza"
+}

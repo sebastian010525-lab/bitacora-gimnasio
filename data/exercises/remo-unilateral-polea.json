@@ -1,0 +1,20 @@
+{
+  "alternativas": [
+    "remo-sentado-polea",
+    "remo-mancuerna"
+  ],
+  "emoji": "🚣",
+  "fuenteImg": "free-exercise-db (dominio público)",
+  "imagenes": [
+    "/_blob/dae8b32ca5417cb9b93b6bca92ca0736",
+    "/_blob/989c09a4df82cac09cd122fd884953a4"
+  ],
+  "musculos": [
+    "Espalda",
+    "Dorsal",
+    "Bíceps"
+  ],
+  "nombre": "Remo unilateral en polea",
+  "nota": "",
+  "tipo": "fuerza"
+}

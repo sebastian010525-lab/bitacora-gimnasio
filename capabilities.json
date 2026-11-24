@@ -2,17 +2,9 @@
   "assets": {},
   "db": {
     "rules": [
-      {"path": "", "read": "owner", "write": "owner"},
-      {"path": "data/users/{self}", "read": "interact", "write": "interact"},
-      {"path": "exercises", "read": "interact", "write": "interact"},
-      {"path": "media", "read": "interact", "write": "owner"},
-      {"path": "members", "read": "interact", "write": "owner"},
-      {"path": "requests", "read": "owner", "write": "owner"},
-      {"path": "requests/{self}", "read": "interact", "write": "interact"},
-      {"path": "feed", "read": "interact", "write": "owner"},
-      {"path": "feed/{self}", "read": "interact", "write": "interact"}
+      {"path": "", "read": "owner", "write": "owner"}
     ]
   },
   "downloads": true,
-  "user": {"scopes": ["profile"]}
+  "user": {}
 }

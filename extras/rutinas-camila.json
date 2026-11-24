@@ -1,0 +1,292 @@
+{
+  "app": "bitacora-gym",
+  "version": 2,
+  "exportado": "2026-11-23T23:58:10Z",
+  "routines": {
+    "cami-cuadriceps-gluteos": {
+      "nombre": "Cuádriceps y Glúteos",
+      "letra": "A",
+      "emoji": "🦵",
+      "orden": 100,
+      "dias": [],
+      "archivada": false,
+      "actualizada": 1795478290668,
+      "items": [
+        {
+          "exerciseId": "hip-thrust",
+          "series": 4,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 44,
+          "minutos": null
+        },
+        {
+          "exerciseId": "leg-press",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 40.5,
+          "minutos": null
+        },
+        {
+          "exerciseId": "sentadilla-goblet",
+          "series": 3,
+          "repMin": 10,
+          "repMax": 10,
+          "cargaKg": 10,
+          "minutos": null
+        },
+        {
+          "exerciseId": "zancadas",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 7.5,
+          "minutos": null
+        },
+        {
+          "exerciseId": "extension-pierna",
+          "series": 4,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 18,
+          "minutos": null
+        },
+        {
+          "exerciseId": "aductores",
+          "series": 4,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 25.3,
+          "minutos": null
+        },
+        {
+          "exerciseId": "pantorrilla-de-pie",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 14,
+          "minutos": null
+        },
+        {
+          "exerciseId": "leg-press-unilateral",
+          "series": 3,
+          "repMin": 9,
+          "repMax": 9,
+          "cargaKg": 18,
+          "minutos": null
+        }
+      ]
+    },
+    "cami-espalda-biceps": {
+      "nombre": "Espalda y Bíceps",
+      "letra": "B",
+      "emoji": "🚣",
+      "orden": 101,
+      "dias": [],
+      "archivada": false,
+      "actualizada": 1795478290668,
+      "items": [
+        {
+          "exerciseId": "serrato-polea",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 10,
+          "minutos": null
+        },
+        {
+          "exerciseId": "remo-unilateral-polea",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 5.7,
+          "minutos": null
+        },
+        {
+          "exerciseId": "remo-sentado-polea",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 15,
+          "minutos": null
+        },
+        {
+          "exerciseId": "jalon-cerrado",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 18,
+          "minutos": null
+        },
+        {
+          "exerciseId": "peck-fly-invertido",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 11,
+          "minutos": null
+        },
+        {
+          "exerciseId": "remo-cara",
+          "series": 4,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 9,
+          "minutos": null
+        },
+        {
+          "exerciseId": "curl-biceps-polea",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 3.4,
+          "minutos": null
+        },
+        {
+          "exerciseId": "martillos-biceps",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 2.5,
+          "minutos": null
+        },
+        {
+          "exerciseId": "caminadora",
+          "series": null,
+          "repMin": null,
+          "repMax": null,
+          "cargaKg": null,
+          "minutos": 20
+        }
+      ]
+    },
+    "cami-femorales-gluteos": {
+      "nombre": "Femorales y Glúteos",
+      "letra": "C",
+      "emoji": "🍑",
+      "orden": 102,
+      "dias": [],
+      "archivada": false,
+      "actualizada": 1795478290668,
+      "items": [
+        {
+          "exerciseId": "hip-thrust",
+          "series": 3,
+          "repMin": 10,
+          "repMax": 10,
+          "cargaKg": 20.41165665,
+          "minutos": null
+        },
+        {
+          "exerciseId": "peso-muerto-rumano",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 20,
+          "minutos": null
+        },
+        {
+          "exerciseId": "curl-femoral-sentado",
+          "series": 4,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 27.2155422,
+          "minutos": null
+        },
+        {
+          "exerciseId": "hiperextension-gluteo",
+          "series": 4,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 12.5,
+          "minutos": null
+        },
+        {
+          "exerciseId": "patada-gluteo",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 5.7,
+          "minutos": null
+        },
+        {
+          "exerciseId": "abductores",
+          "series": 4,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 32,
+          "minutos": null
+        },
+        {
+          "exerciseId": "pantorrilla-prensa",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 54.4310844,
+          "minutos": null
+        },
+        {
+          "exerciseId": "peso-muerto-sumo",
+          "series": 3,
+          "repMin": 12,
+          "repMax": 12,
+          "cargaKg": 12.5,
+          "minutos": null
+        }
+      ]
+    }
+  },
+  "sessions": {},
+  "body": {},
+  "notes": {
+    "patada-gluteo": {
+      "texto": "En polea: normal, sprinter o cruzada. Cruzada 5.7 kg · sprinter 16.5 kg.",
+      "act": 1795478290668
+    },
+    "abductores": {
+      "texto": "Máquina 4×12 a 32 kg. También en polea 3×8.",
+      "act": 1795478290668
+    },
+    "pantorrilla-prensa": {
+      "texto": "En prensa 120 lb. De pie con 5 kg.",
+      "act": 1795478290668
+    },
+    "peso-muerto-sumo": {
+      "texto": "OPCIONAL en Femorales y Glúteos: sentadilla y peso muerto sumo, 3 series con 12.5 kg.",
+      "act": 1795478290668
+    },
+    "curl-femoral-sentado": {
+      "texto": "Anotado: 15 kg y 60 lb (la rutina usa 60 lb).",
+      "act": 1795478290668
+    },
+    "remo-unilateral-polea": {
+      "texto": "Polea 5.7 kg. En máquina: 15 kg.",
+      "act": 1795478290668
+    },
+    "remo-sentado-polea": {
+      "texto": "Agarre abierto.",
+      "act": 1795478290668
+    },
+    "jalon-cerrado": {
+      "texto": "Agarre neutro cerrado. Alternativa: dominadas asistidas.",
+      "act": 1795478290668
+    },
+    "peck-fly-invertido": {
+      "texto": "Reverse fly 11 kg. También en polea unilateral 3×12.",
+      "act": 1795478290668
+    },
+    "caminadora": {
+      "texto": "Caminadora o bicicleta, 20 min.",
+      "act": 1795478290668
+    },
+    "zancadas": {
+      "texto": "Lunges estáticos.",
+      "act": 1795478290668
+    },
+    "leg-press-unilateral": {
+      "texto": "OPCIONAL en Cuádriceps y Glúteos.",
+      "act": 1795478290668
+    }
+  }
+}
