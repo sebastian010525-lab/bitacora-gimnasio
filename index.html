@@ -363,7 +363,7 @@ async function put(col, id, data){
   if (S.mode === "local"){ saveLocal(); render(); return true; }
   render();
   try { const body = {...data}; delete body.id; await db.collection(colPath(col)).doc(id).set(body); return true; }
-  catch(e){ toast("No se pudo guardar: " + (e.message || e.code)); return false; }
+  catch(e){ toast("No se pudo guardar: " + (e.message || e.code || "error desconocido"), 8000); return false; }
 }
 async function del(col, id){
   delete S[col][id];
@@ -446,13 +446,13 @@ function calcTotals(items){
 function go(view, p, tab){ if (tab) UI.tab = tab; UI.view = view; UI.p = p || {}; UI.sheet = null; render(true); }
 function openSheet(s){ UI.sheet = s; render(); }
 function closeSheet(){ UI.sheet = null; render(); }
-function toast(msg){ UI.toast = msg; render(); clearTimeout(toast.t); toast.t = setTimeout(() => { UI.toast = null; render(); }, 2600); }
+function toast(msg, ms){ UI.toast = msg; render(); clearTimeout(toast.t); toast.t = setTimeout(() => { UI.toast = null; render(); }, ms || 2600); }
 
 /* ---------- componentes ---------- */
 const top = (title, back, right) => `<div class="top">${back ? `<button class="backbtn" data-act="${back}">${icon("arrow-left")}<span>Volver</span></button>` : ""}<div class="title">${title}</div>${right||""}</div>`;
 function wInput(id, bind, kg){
   const u = UI.wunits[id] || U(); const v = kg == null ? "" : r1(fromKg(kg, u));
-  return `<div class="winput"><input class="input num" id="${id}" type="number" inputmode="decimal" step="0.5" min="0" data-w="${bind}" data-wid="${id}" value="${v}" placeholder="0"><button type="button" data-act="wunit" data-id="${id}" aria-label="Cambiar unidad">${u}</button></div>`;
+  return `<div class="winput"><input class="input num" id="${id}" type="text" inputmode="decimal" autocomplete="off" data-w="${bind}" data-wid="${id}" value="${v}" placeholder="0"><button type="button" data-act="wunit" data-id="${id}" aria-label="Cambiar unidad">${u}</button></div>`;
 }
 const stepper = (bind, v) => `<div class="stepper"><button data-act="step" data-f="${bind}" data-d="-1" aria-label="Menos">${icon("minus")}</button><span class="v">${v ?? 0}</span><button data-act="step" data-f="${bind}" data-d="1" aria-label="Más">${icon("plus")}</button></div>`;
 const seg = (act, opts, cur) => `<div class="seg" role="group">${opts.map(([v,l]) => `<button data-act="${act}" data-v="${v}" aria-pressed="${v===cur}">${l}</button>`).join("")}</div>`;
@@ -663,11 +663,11 @@ function vSalud(){
   return h;
 }
 function bodyField(f, b){
-  const ctl = f.w ? wInput("w-"+f.k, "bForm."+f.k, b[f.k]) : `<span class="ufield"><input class="num" id="b-${f.k}" type="number" inputmode="decimal" step="0.1" min="0" data-f="bForm.${f.k}" data-num="1" value="${b[f.k] ?? ""}" placeholder="0"><span class="u">${f.u}</span></span>`;
+  const ctl = f.w ? wInput("w-"+f.k, "bForm."+f.k, b[f.k]) : `<span class="ufield"><input class="num" id="b-${f.k}" type="text" inputmode="decimal" autocomplete="off" data-f="bForm.${f.k}" data-num="1" value="${b[f.k] ?? ""}" placeholder="0"><span class="u">${f.u}</span></span>`;
   return `<label class="fr"><span class="fl"><span class="fe">${f.e}</span><span>${f.l}</span></span>${ctl}</label>`;
 }
 function pairField(k, l, e, b){
-  const one = (side, lab) => `<span class="ufield"><input class="num" id="b-${k}${side}Cm" type="number" inputmode="decimal" step="0.1" min="0" data-f="bForm.${k}${side}Cm" data-num="1" value="${b[k+side+"Cm"] ?? ""}" placeholder="0" aria-label="${l} ${lab}"></span>`;
+  const one = (side, lab) => `<span class="ufield"><input class="num" id="b-${k}${side}Cm" type="text" inputmode="decimal" autocomplete="off" data-f="bForm.${k}${side}Cm" data-num="1" value="${b[k+side+"Cm"] ?? ""}" placeholder="0" aria-label="${l} ${lab}"></span>`;
   return `<div class="fr pr"><span class="fl"><span class="fe">${e}</span><span>${l}</span></span><span class="pin">${one("Der","derecho")}${one("Izq","izquierdo")}</span></div>`;
 }
 function vBodyForm(){
@@ -1063,7 +1063,7 @@ document.addEventListener("click", e => {
     case "metric": UI.metric = ds.k; render(); break;
     case "bodyNew": UI.bForm = {id:null, fecha:today()}; go("bodyForm", {}, "salud"); break;
     case "bodyEdit": UI.bForm = clone(S.body[ds.id]); go("bodyForm", {}, "salud"); break;
-    case "bodySave": { const b = UI.bForm; if (!b.fecha){ toast("Elige la fecha"); break; } const id = b.id || uid(); const body = {fecha:b.fecha, creado:b.creado || Date.now(), nota:b.nota||""}; BODY.forEach(f => { body[f.k] = b[f.k] ?? null; }); put("body", id, body); UI.bForm = null; go("home", {}, "salud"); toast("Registro guardado"); break; }
+    case "bodySave": { const b = UI.bForm; if (!b.fecha){ toast("Elige la fecha"); break; } const id = b.id || uid(); const body = {fecha:b.fecha, creado:b.creado || Date.now(), nota:b.nota||""}; BODY.forEach(f => { body[f.k] = b[f.k] ?? null; }); const prev = S.body[id]; el.disabled = true; put("body", id, body).then(ok => { if (!ok){ if (prev) S.body[id] = prev; else delete S.body[id]; render(); return; } UI.bForm = null; go("home", {}, "salud"); toast("Registro guardado"); }); break; }
     case "bodyDelAsk": openSheet({type:"confirm", title:"Eliminar registro", text:"Se borra esta medición. No se puede deshacer.", ok:"bodyDel", okLabel:"Eliminar", danger:true}); break;
     case "bodyDel": del("body", UI.bForm.id); UI.bForm = null; go("home", {}, "salud"); break;
     /* configuración */
